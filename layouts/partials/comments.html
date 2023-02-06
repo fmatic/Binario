@@ -1,5 +1,14 @@
-{{ if and (.Site.DisqusShortname) (.Param "comments") (not .Site.IsServer) }}
+<!-- {{ if and (.Site.DisqusShortname) (.Param "comments") (not .Site.IsServer) }}
 <section class="comments block">
 	{{ template "_internal/disqus.html" . }}
 </section>
-{{ end }}
+{{ end }}-->
+
+<script src="https://utteranc.es/client.js"
+        repo="fmatic/blog"
+        issue-term="pathname"
+        label="Comment"
+        theme="photon-dark"
+        crossorigin="anonymous"
+        async>
+</script>
